@@ -9,5 +9,5 @@ jobs:
               run: echo "Hello World"
             - name: Multiple commands
               run: |
-              node -v
-              npm -v
+                node -v
+                npm -v
