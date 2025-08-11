@@ -1,5 +1,20 @@
 name: Test workflow number 1
 on: [push]
+  Workflow_dispatch:
+    inputs:
+      environment:
+        description: "File submit to Account type: "
+        default: Production
+        required: true
+        type: choice
+        options:
+          - Production
+          - sand
+          - dev
+          - UAT
+      Account:
+        required: true
+        type: string
 
 jobs:
     run-shell-command:
